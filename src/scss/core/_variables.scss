@@ -1,6 +1,13 @@
 // fonts
-$font-main: "Roboto", sans-serif;
+$font-main: "Raleway", sans-serif;
+/* $font-title: "Gochi Hand", cursive; */
 
 // colors
-$color-white: #f3f4f5;
-$color-secondary: #999;
+$color-primary: #00ffc2;
+$color-secondary: white;
+$color-tertiary: #666567;
+$color-details: #6651ab;
+
+//breakpoints
+$tablet: 768px;
+$desktop: 1280px;
