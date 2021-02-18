@@ -2,7 +2,7 @@
   background-image: linear-gradient(
     180deg,
     transparent 0%,
-    rgba(218, 111, 40, 0.6) 100%
+    rgba($color-primary, 0.6) 100%
   );
   background-color: $color-secondary; //#f3f3f3;
   min-height: 96vh;
@@ -10,56 +10,93 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
 
-.main__container1 {
-  background-color: $color-secondary;
-  width: 330px;
-  min-height: 540px;
-  border-radius: 4px;
-  z-index: 1;
-  position: absolute;
-  border-radius: 5px;
-  box-shadow: 1px 1px 15px -5px $color-details;
-  display: none;
-  @include tablet {
-    display: inline;
+  &__container1 {
+    background-color: $color-secondary;
+    width: 330px;
+    min-height: 540px;
+    border-radius: 4px;
+    z-index: 1;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px -5px $color-details;
+    display: none;
+    @include tablet {
+      display: inline;
+    }
+  }
+
+  &__container2 {
+    height: 520px;
+    width: 340px;
+    position: absolute;
+    background-color: $color-secondary;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px -5px $color-details;
+    display: none;
+
+    @include tablet {
+      display: inline;
+    }
+  }
+
+  &__wrapper {
+    z-index: 2;
+    height: 560px;
+    width: 300px;
+    background-color: $color-secondary;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px -5px $color-details;
+
+    @include tablet {
+      width: 320px;
+    }
+  }
+
+  &__header {
+    padding: 0 5px;
+    color: $color-font;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $color-secondary;
+    height: 130px;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 4px dashed $color-primary;
   }
 }
 
-.main__container2 {
-  height: 520px;
-  width: 340px;
-  position: absolute;
-  background-color: $color-secondary;
-  border-radius: 5px;
-  box-shadow: 1px 1px 15px -5px $color-details;
-  display: none;
-
-  @include tablet {
-    display: inline;
-  }
-}
-
-.main__wrapper {
-  z-index: 2;
-  height: 560px;
-  width: 300px;
-  background-color: $color-secondary;
-  border-radius: 5px;
-  box-shadow: 1px 1px 15px -5px $color-details;
-
-  @include tablet {
-    width: 320px;
-  }
-}
-
-.main__header {
-  padding: 0 5px;
-  color: $color-font;
+.date {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  background-color: $color-tertiary;
-  height: 130px;
-  border-radius: 5px 5px 0 0;
+  width: 100%;
+  margin: 0 15px;
+
+  &__icon {
+    color: $color-secondary;
+    background-color: $color-primary;
+    font-size: 25px;
+    margin-left: 20px;
+    padding: 10px;
+  }
+  &__container,
+  .calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__number {
+      color: $color-primary;
+      font-size: 45px;
+      margin-right: 8px;
+    }
+
+    &__date {
+      color: $color-font;
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
 }
