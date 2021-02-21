@@ -1,0 +1,48 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 14vw;
+  width: 100%;
+  background-color: $color-tertiary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 4vh;
+  }
+}
+
+.footer__social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.footer__social-list--item {
+  background-color: transparent;
+  padding: 0 8px;
+}
+
+.linkedin,
+.twitter,
+.github {
+  color: $color-secondary;
+  font-size: 24px;
+  padding-top: 4px;
+
+  &:hover {
+    color: $color-details;
+  }
+}
+
+.footer__author {
+  color: $color-details;
+  padding: 2px 8px;
+}

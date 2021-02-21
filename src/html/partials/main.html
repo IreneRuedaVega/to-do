@@ -18,5 +18,44 @@
         </div>
       </div>
     </article>
+    <section class="tasks">
+      <div class="container">
+        <ul class="todo-list"></ul>
+        <ul class="done"></ul>
+      </div>
+      <div class="container-button">
+        <button
+          type="button"
+          class="container-button__btn button--plus"
+          name="button--add"
+        >
+          +
+        </button>
+      </div>
+    </section>
+    <div class="background hidden">
+      <section class="new-task">
+        <form class="new-task__form">
+          <label for="new-task" class="new-task__form--title"
+            >Nueva tarea</label
+          >
+          <input
+            type="text"
+            class="new-task__form--input js-input"
+            name="new-task"
+            autofocus
+            id="new-task"
+            placeholder="Ej: Ir a la compra"
+          />
+          <button
+            type="submit"
+            class="new-task__form--button-add button--add"
+            name="button--add"
+          >
+            Añadir
+          </button>
+        </form>
+      </section>
+    </div>
   </section>
 </main>
