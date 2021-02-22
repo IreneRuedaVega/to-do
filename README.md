@@ -4,7 +4,7 @@
 
 ## Guía de funcionalidad
 
-## Acciones
+### Acciones
 
 "To do List" es una aplicación simple de lista de tareas con una funcionalidad básica:
 
