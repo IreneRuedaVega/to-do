@@ -15,28 +15,28 @@ printLocalStorage();
 
 function printDate() {
   const days = [
-    "Lunes",
-    "Martes",
-    "Miércoles",
-    "Jueves",
-    "Viernes",
-    "Sábado",
-    "Domingo",
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
   ];
 
   const months = [
-    "Enero",
-    "Febrero",
-    "Marzo",
-    "Abril",
-    "Mayo",
-    "Junio",
-    "Julio",
-    "Agosto",
-    "Septiembre",
-    "Octubre",
-    "Noviembre",
-    "Diciembre",
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
   ];
 
   const date = new Date();
