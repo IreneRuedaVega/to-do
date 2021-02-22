@@ -3,40 +3,142 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/476ba4bf26.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
+    <div>
+      <header class="header">
+        <i class="fas fa-thumbtack header__img"></i>
+        <h1 class="header__title">
+          To Do <span class="header__title--span">List</span>
+        </h1>
       </header>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
+      <main class="main">
+        <div class="main__container1">
+          <article class="main__header"></article>
+        </div>
+        <div class="main__container2">
+          <article class="main__header"></article>
+        </div>
+        <section class="main__wrapper">
+          <article class="main__header">
+            <div class="date">
+              <i class="fas fa-thumbtack date__icon"></i>
+              <div class="date__container calendar">
+                <div class="calendar__number js-number"></div>
+                <div class="calendar__date">
+                  <div class="calendar__date--day js-day"></div>
+                  <div class="calendar__date--month js-month-year"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <section class="tasks">
+            <div class="container">
+              <ul class="todo-list"></ul>
+              <ul class="done"></ul>
+            </div>
+            <div class="container-button">
+              <button
+                type="button"
+                class="container-button__btn button--plus"
+                name="button--add"
+              >
+                +
+              </button>
+            </div>
+          </section>
+          <div class="background hidden">
+            <section class="new-task">
+              <form class="new-task__form">
+                <label for="new-task" class="new-task__form--title"
+                  >Nueva tarea</label
+                >
+                <input
+                  type="text"
+                  class="new-task__form--input js-input"
+                  name="new-task"
+                  autofocus
+                  id="new-task"
+                  placeholder="Ej: Ir a la compra"
+                />
+                <button
+                  type="submit"
+                  class="new-task__form--button-add button--add"
+                  name="button--add"
+                >
+                  Añadir
+                </button>
+              </form>
+            </section>
+          </div>
+        </section>
       </main>
 
-      <a class="link__adalab" href="https://adalab.es" target="_blank">Adalab</a>
-
-      <a class="link__github" href="https://github.com" target="_blank">GitHub</a>
-
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es" target="_blank">Adalab</a>
-
-        </small>
+      <footer class="footer">
+        <nav>
+          <ul class="footer__social-list">
+            <li>
+              <a
+                href="https://github.com/IreneRuedaVega"
+                target="_blank"
+                title="Github"
+                class="footer__social-list--item"
+                rel="noreferrer"
+              >
+                <i class="fab fa-github-square github"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="//linkedin.com/in/ireneruedavega"
+                target="_blank"
+                title="Linkedin"
+                class="footer__social-list--item"
+                rel="noreferrer"
+              >
+                <i class="fab fa-linkedin linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="//twitter.com/Irenelandia_"
+                target="_blank"
+                title="Twitter"
+                class="footer__social-list--item"
+                rel="noreferrer"
+              >
+                <i class="fab fa-twitter-square twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <small class="footer__author"
+          >Hecho con <span class="heart">&#128156;</span> por Irene Rueda Vega</small
+        >
       </footer>
 
     </div>
